@@ -23,7 +23,8 @@ namespace GumshoeRacer
         public MainForm()
         {
             InitializeComponent();
-            rankListView.Items.Add("Jimmy").SubItems.Add("424, 411");
+            var listItem = new ListViewItem("Jimmy");
+            rankListView.Items.Add(listItem).SubItems.AddRange(new[] { "424, 411", "Level 16" });
         }
 
         #region Title Bar and Buttons

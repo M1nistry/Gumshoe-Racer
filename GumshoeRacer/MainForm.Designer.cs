@@ -45,9 +45,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.rankListView = new System.Windows.Forms.ListView();
             this.nameColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.levelColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.experienceColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.listviewPanel = new System.Windows.Forms.Panel();
-            this.levelColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.minimizePanel.SuspendLayout();
@@ -243,6 +243,10 @@
             this.nameColumn.Text = "Name";
             this.nameColumn.Width = 80;
             // 
+            // levelColumn
+            // 
+            this.levelColumn.DisplayIndex = 2;
+            // 
             // experienceColumn
             // 
             this.experienceColumn.DisplayIndex = 1;
@@ -256,10 +260,6 @@
             this.listviewPanel.Size = new System.Drawing.Size(236, 245);
             this.listviewPanel.TabIndex = 16;
             this.listviewPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.listviewPanel_Paint);
-            // 
-            // levelColumn
-            // 
-            this.levelColumn.DisplayIndex = 2;
             // 
             // label2
             // 
@@ -275,6 +275,7 @@
             // 
             this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(57, 31);
             this.comboBox1.Name = "comboBox1";
